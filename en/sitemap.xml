@@ -58,6 +58,10 @@
   </url>
   
   <url>
+    <loc>/posts/1/01/build-illumos-gate/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
     <xhtml:link
                 rel="alternate"

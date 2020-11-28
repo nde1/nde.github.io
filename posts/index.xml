@@ -25,5 +25,53 @@ Primary topics and tags will be illumos, Real-Time Communications, Rust, C, Virt
 ]]></content>
         </item>
         
+        <item>
+            <title>Build illumos-gate</title>
+            <link>/posts/1/01/build-illumos-gate/</link>
+            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+            
+            <guid>/posts/1/01/build-illumos-gate/</guid>
+            <description>Build illumos-gate Potentially the best place to build illumos is on OmniOS. OmniOS is similarly situated in terms of it&amp;rsquo;s closeness to gate. Pull down OmniOS and install it on whatever virtual or physical platform desired.
+Once booted into OmniOS, lets install the necessary tools and pull down the illumos-gate repository.
+Install Dev Tools &#39;
+pkg update pkg install pkg:/developer/illumos-tools &#39;
+Clone the illumos-gate Repo &#39;
+mkdir /code cd /code git clone https://github.</description>
+            <content type="html"><![CDATA[<h2 id="build-illumos-gate">Build illumos-gate</h2>
+<p>Potentially the best place to build illumos is on OmniOS.  OmniOS is similarly situated in terms of it&rsquo;s closeness to gate.  Pull down OmniOS and install it on whatever virtual or physical platform desired.</p>
+<p>Once booted into OmniOS, lets install the necessary tools and pull down the illumos-gate repository.</p>
+<h2 id="install-dev-tools">Install Dev Tools</h2>
+<p>'</p>
+<h1 id="pkg-update">pkg update</h1>
+<h1 id="pkg-install-pkgdeveloperillumos-tools">pkg install pkg:/developer/illumos-tools</h1>
+<p>'</p>
+<h2 id="clone-the-illumos-gate-repo">Clone the illumos-gate Repo</h2>
+<p>'</p>
+<h1 id="mkdir-code">mkdir /code</h1>
+<h1 id="cd-code">cd /code</h1>
+<h1 id="git-clone-httpsgithubcomillumosillumos-gategit">git clone <a href="https://github.com/illumos/illumos-gate.git">https://github.com/illumos/illumos-gate.git</a></h1>
+<p>'</p>
+<h2 id="update-or-patch-as-needed--build">Update or Patch as Needed &amp; Build</h2>
+<p>'</p>
+<h1 id="cd-illumos-gate">cd illumos-gate</h1>
+<h1 id="this-is-the-time-to-make-patch-changes-or-updates-as-needed">This is the time to make patch changes or updates as needed.</h1>
+<h1 id="time-ksh93-usrsrctoolsscriptsnightly-optonbldenvomnios-illumos-gate">time ksh93 usr/src/tools/scripts/nightly /opt/onbld/env/omnios-illumos-gate</h1>
+<p>'</p>
+<h2 id="create-a-boot-environment">Create a Boot Environment</h2>
+<p>'</p>
+<h1 id="cd-codeillumos-gateusrsrc">cd /code/illumos-gate/usr/src</h1>
+<h1 id="optonbldbinonu--t-nightly--d-packagesi386nightly">/opt/onbld/bin/onu -t nightly -d packages/i386/nightly</h1>
+<h1 id="beadm-list-verify-that-your-nightly-be-is-set-as-active">beadm list #Verify that your nightly BE is set as active</h1>
+<h1 id="reboot">reboot</h1>
+<p>'</p>
+<h2 id="view-a-summary-and-output-of-the-build">View a Summary and Output of the build</h2>
+<p>If you will be posting a patch to illumos-gate from review or building for another reason, you will want to see if the changes and build completed successfully.</p>
+<p>The location of the the logs will be in /code/illumos-gate/log
+A summary is saved in /code/illumos-gate/log/latest/mail_msg</p>
+<h2 id="git-pbchk">git-pbchk</h2>
+<p>Another part of submitting a patch to illumos is sumbmitting the results of git-pbchk.</p>
+]]></content>
+        </item>
+        
     </channel>
 </rss>
