@@ -6,7 +6,19 @@
     <description>Recent content in unix on </description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 01 Mar 2020 23:38:12 -0500</lastBuildDate><atom:link href="/tags/unix/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Nov 2020 21:00:12 -0500</lastBuildDate><atom:link href="/tags/unix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build illumos-gate</title>
+      <link>/posts/2020/11/build-illumos-gate/</link>
+      <pubDate>Thu, 26 Nov 2020 21:00:12 -0500</pubDate>
+      
+      <guid>/posts/2020/11/build-illumos-gate/</guid>
+      <description>Introduction Potentially the best place to build illumos is on OmniOS. OmniOS is similarly situated in terms of it&amp;rsquo;s closeness to gate. Pull down OmniOS and install it on whatever virtual or physical platform desired.
+OmniOS Download
+Once booted into OmniOS, lets install the necessary tools and pull down the illumos-gate repository.
+Install Dev Tools # pkg update # pkg install pkg:/developer/illumos-tools Clone the illumos-gate Repository # mkdir /code # cd /code # git clone https://github.</description>
+    </item>
+    
     <item>
       <title>Online!</title>
       <link>/posts/2020/03/online/</link>

@@ -5,8 +5,50 @@
         <description>Recent content in Posts on </description>
         <generator>Hugo -- gohugo.io</generator>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Sun, 01 Mar 2020 23:38:12 -0500</lastBuildDate>
+        <lastBuildDate>Thu, 26 Nov 2020 21:00:12 -0500</lastBuildDate>
         <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Build illumos-gate</title>
+            <link>/posts/2020/11/build-illumos-gate/</link>
+            <pubDate>Thu, 26 Nov 2020 21:00:12 -0500</pubDate>
+            
+            <guid>/posts/2020/11/build-illumos-gate/</guid>
+            <description>Introduction Potentially the best place to build illumos is on OmniOS. OmniOS is similarly situated in terms of it&amp;rsquo;s closeness to gate. Pull down OmniOS and install it on whatever virtual or physical platform desired.
+OmniOS Download
+Once booted into OmniOS, lets install the necessary tools and pull down the illumos-gate repository.
+Install Dev Tools # pkg update # pkg install pkg:/developer/illumos-tools Clone the illumos-gate Repository # mkdir /code # cd /code # git clone https://github.</description>
+            <content type="html"><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>Potentially the best place to build illumos is on OmniOS.  OmniOS is similarly situated in terms of it&rsquo;s closeness to gate.  Pull down OmniOS and install it on whatever virtual or physical platform desired.</p>
+<p><a href="https://omniosce.org/download.html">OmniOS Download</a></p>
+<p>Once booted into OmniOS, lets install the necessary tools and pull down the illumos-gate repository.</p>
+<h3 id="install-dev-tools">Install Dev Tools</h3>
+<pre><code class="language-{.bash}" data-lang="{.bash}"> # pkg update
+ # pkg install pkg:/developer/illumos-tools
+</code></pre><h3 id="clone-the-illumos-gate-repository">Clone the illumos-gate Repository</h3>
+<pre><code class="language-{.bash}" data-lang="{.bash}"> # mkdir /code
+ # cd /code
+ # git clone https://github.com/illumos/illumos-gate.git
+ # cd illumos-gate
+</code></pre><h3 id="update-or-patch-as-needed">Update or Patch as Needed</h3>
+<pre><code class="language-{.bash}" data-lang="{.bash}">This is the time to make patch changes or updates as needed.
+</code></pre><h3 id="build-illumos-gate">Build illumos-gate</h3>
+<pre><code class="language-{.bash}" data-lang="{.bash}"> # time ksh93 usr/src/tools/scripts/nightly /opt/onbld/env/omnios-illumos-gate
+</code></pre><h3 id="create-a-boot-environment">Create a Boot Environment</h3>
+<pre><code class="language-{.bash}" data-lang="{.bash}"> # cd /code/illumos-gate/usr/src
+ # /opt/onbld/bin/onu -t nightly -d packages/i386/nightly
+ # beadm list #Verify that your nightly BE is set as active
+ # reboot
+</code></pre><h3 id="view-a-summary-and-output-of-the-build">View a Summary and Output of the build</h3>
+<p>If you will be posting a patch to illumos-gate for review or building for another reason, you will want to see if the changes and build completed successfully.
+The location of the the logs will be in /code/illumos-gate/log
+A summary is saved in /code/illumos-gate/log/latest/mail_msg</p>
+<pre><code class="language-{.bash}" data-lang="{.bash}"> # tail -f /code/illumos-gate/log/nightly
+ # cat /code/illumos-gate/log/mail_msg
+</code></pre><h3 id="git-pbchk">git-pbchk</h3>
+<p>Another part of submitting a patch to illumos is sumbmitting the results of git-pbchk.</p>
+]]></content>
+        </item>
         
         <item>
             <title>Online!</title>

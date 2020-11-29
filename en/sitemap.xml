@@ -9,7 +9,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-03-01T23:38:12-05:00</lastmod>
+    <lastmod>2020-11-26T21:00:12-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -23,23 +23,23 @@
   </url>
   
   <url>
-    <loc>/tags/illumos/</loc>
-    <lastmod>2020-03-01T23:38:12-05:00</lastmod>
+    <loc>/posts/2020/11/build-illumos-gate/</loc>
+    <lastmod>2020-11-26T21:00:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/2020/03/online/</loc>
-    <lastmod>2020-03-01T23:38:12-05:00</lastmod>
+    <loc>/tags/illumos/</loc>
+    <lastmod>2020-11-26T21:00:12-05:00</lastmod>
   </url>
   
   <url>
     <loc>/posts/</loc>
-    <lastmod>2020-03-01T23:38:12-05:00</lastmod>
+    <lastmod>2020-11-26T21:00:12-05:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2020-03-01T23:38:12-05:00</lastmod>
+    <lastmod>2020-11-26T21:00:12-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -54,6 +54,11 @@
   
   <url>
     <loc>/tags/unix/</loc>
+    <lastmod>2020-11-26T21:00:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2020/03/online/</loc>
     <lastmod>2020-03-01T23:38:12-05:00</lastmod>
   </url>
   
