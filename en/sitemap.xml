@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/about/</loc>
+    <lastmod>2020-11-26T21:20:12-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/</loc>
     <lastmod>2020-03-01T23:38:12-05:00</lastmod>
     <xhtml:link
@@ -55,10 +60,6 @@
   <url>
     <loc>/tags/zfs/</loc>
     <lastmod>2020-03-01T23:38:12-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/1/01/build-illumos-gate/</loc>
   </url>
   
   <url>

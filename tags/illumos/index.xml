@@ -18,19 +18,5 @@ The goal is to share information on topics and help spread the adoption of open 
 In the coming weeks, I would like to document bug fixes and create packages for others to use for the wider adoption of illumos specifically.</description>
     </item>
     
-    <item>
-      <title>Build illumos-gate</title>
-      <link>/posts/1/01/build-illumos-gate/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/1/01/build-illumos-gate/</guid>
-      <description>Build illumos-gate Potentially the best place to build illumos is on OmniOS. OmniOS is similarly situated in terms of it&amp;rsquo;s closeness to gate. Pull down OmniOS and install it on whatever virtual or physical platform desired.
-Once booted into OmniOS, lets install the necessary tools and pull down the illumos-gate repository.
-Install Dev Tools &#39;
-pkg update pkg install pkg:/developer/illumos-tools &#39;
-Clone the illumos-gate Repo &#39;
-mkdir /code cd /code git clone https://github.</description>
-    </item>
-    
   </channel>
 </rss>
